@@ -1,30 +1,24 @@
-body{
-    /*
+body{ 
+    padding: 0; 
+    margin: 0;
+}
+
+.textHead{
     font-family: "ivymode", sans-serif;
     font-weight: 700;
     font-style: normal;
-    */
+}
 
-   /* // <uniquifier>: Use a uniquifier for the class name 
-   */
-
+.textBody{
     font-family: "Urbanist", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    
-    padding: 0; 
-    margin: 0;
-
 }
 
-nav{
-    /* background-color: #ECEDEA; */
+/* nav{
     color: black;
     padding: 20px 50px;
-}
-
-.navTop{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,5 +59,5 @@ nav{
 
 .searchInput::placeholder{
     color: lightgrey;
-}
+} */
 
