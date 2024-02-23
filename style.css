@@ -1,63 +1,216 @@
-body{ 
-    padding: 0; 
-    margin: 0;
+/* BG  */
+.bgTop{
+    background-color: #ECEDEA; 
+}
+/* BG shadow underlay  */
+.bgTop::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/BGtop.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;  
 }
 
-.textHead{
+/* BG shadow About legacy */
+.aboutBG{
+    position: relative;
+}
+.aboutBG::before{
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-image: url('./img/BGlegacy.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;  
+}
+
+/* BG white blur explore  */
+.exploreBG {
+    position: relative;
+}
+.exploreBG::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/exploreBG.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+/* MARGIN  */
+/* big logo margin  */
+.custom-top-margin {
+    margin-top: -20px; 
+}
+
+/* general div margin  */
+.custom-margin{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+/* sparkle text margin  */
+.custom-start {
+    margin-left: 7vw;
+}
+
+/* margin explore variation */
+.mrg-icon-b{
+    margin-top: 50px;
+}
+.mrg-icon-t{
+    margin-top: -50px;
+}
+
+
+/* sparkle image  */
+.imgLeft{
+    margin-left: calc(-50vw + 50%);
+}
+.custom-size {
+    width: 48vw;
+    height: auto; 
+}
+
+/* TEXT  */
+/* text font  */
+.text-logo{
+    font-size: 180px;
     font-family: "ivymode", sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
 }
-
+.textHead{
+    font-family: "ivymode", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
 .textBody{
     font-family: "Urbanist", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
-
-/* nav{
-    color: black;
-    padding: 20px 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* white text  */
+.white{
+    color: white;
 }
 
-.navMenu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* RESPONSIVE CONTROL  */
+/* small  */
+@media (min-width: 425px) {
+    .text-logo {
+        font-size: 80px; 
+    }
+    .textHead {
+        font-size: 26px; 
+    }
+    .textBody {
+        font-size: 15px; 
+    }
+    .custom-size-explore{
+        max-width: 5vw;
+    }
+    .custom-size {
+        width: 100vw;
+        height: auto; 
+    }
+    .custom-start {
+        margin-left: 0;
+    }
+}
+/* medium  */
+@media (min-width: 768px) {
+    .text-logo {
+        font-size: 100px; 
+    }
+    .textHead {
+        font-size: 28px; 
+    }
+    .textBody {
+        font-size: 15px; 
+    }
+    .custom-size-explore{
+        min-width: 15vw;
+    }
+    .custom-size {
+        width: 48vw;
+        height: auto; 
+    }
+    .custom-start {
+        margin-left: 7vw;
+    }
+
 }
 
-.menuItem {
-    margin-right: 30px;
+/* large  */
+@media (min-width: 992px) {
+    .text-logo {
+        font-size: 150px; 
+    }
+    .textHead {
+        font-size: 32px;
+    }
+    .textBody {
+        font-size: 16px;
+    }
+    .custom-size-explore{
+        min-width: 15vw;
+    }
+    .custom-size {
+        width: 48vw;
+        height: auto; 
+    }
+    .custom-start {
+        margin-left: 7vw;
+    }
+
 }
 
-.navRight{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* xlarge  */
+@media (min-width: 1200px) {
+    .text-logo {
+        font-size: 180px; 
+    }
+    .textHead {
+        font-size: 34px; 
+    }
+    .textBody {
+        font-size: 16px;
+    }
+    .custom-size-explore{
+        min-width: 14vw;
+    }
+    .custom-size {
+        width: 48vw;
+        height: auto; 
+    }
+    .custom-start {
+        margin-left: 7vw;
+    }
 }
 
-.shopIcon{
-    padding-left: 10px;
+/* footer */
+.bgFooter {
+    position: relative;
 }
-
-.search{
-    display: flex;
-    align-items: center;
-    background-color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
+.bgFooter::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    height: 180%;
+    background-image: url('./img/footerBG.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
 }
-
-.searchInput{
-    border: none;
-    background-color: transparent;
-}
-
-.searchInput::placeholder{
-    color: lightgrey;
-} */
-
