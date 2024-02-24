@@ -46,6 +46,23 @@
     z-index: -1;
 }
 
+/* BG Handcraft */
+.bgHandcraft{
+    position: relative;
+    overflow: hidden;
+}
+.bgHandcraft::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: auto;
+    background-image: url('./img/Handcrafted.png');
+    background-size: cover;
+    background-position: left top;
+    z-index: -1;
+}
+
 /* MARGIN  */
 /* big logo margin  */
 .custom-top-margin {
@@ -83,12 +100,6 @@
     font-weight: 400;
     font-style: normal;
 }
-
-/* .dm-serif display-regular {
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: normal;
-  } */
   
 .textHead{
     font-family: "DM Serif Display", serif;
@@ -133,7 +144,11 @@
     margin-top: 30px;
     margin-bottom: 30px;
     }
+    .bgHandcraft::before {
+        background-position: left top; 
+    }
 }
+
 /* medium  */
 @media (min-width: 768px) {
     .text-logo {
@@ -159,8 +174,10 @@
     .custom-margin{
     margin-top: 50px;
     margin-bottom: 50px;
-}
-
+    }
+    .bgHandcraft::before {
+        background-position: left top; 
+    }
 }
 
 /* large  */
@@ -219,6 +236,9 @@
     margin-bottom: 70px;
     }   
 }
+
+
+
 
 /* footer */
 .bgFooter {
