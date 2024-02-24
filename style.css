@@ -49,7 +49,6 @@
 /* BG Handcraft */
 .bgHandcraft{
     position: relative;
-    overflow: hidden;
 }
 .bgHandcraft::before {
     content: "";
@@ -59,7 +58,7 @@
     height: auto;
     background-image: url('./img/Handcrafted.png');
     background-size: cover;
-    background-position: left top;
+    background-position: center;
     z-index: -1;
 }
 
@@ -81,7 +80,10 @@
 .mrg-icon-t{
     margin-top: -50px;
 }
-
+/* about text margin */
+.custom-margin-left{
+    margin-left: -1.5vw;
+}
 
 /* sparkle image  */
 .imgLeft{
@@ -121,13 +123,13 @@
 /* small  */
 @media (min-width: 320px) {
     .text-logo {
-        font-size: 80px; 
+        font-size: 17vw; 
     }
     .textHead {
         font-size: 26px; 
     }
     .textBody {
-        font-size: 12px; 
+        font-size: 3.3vw; 
     }
     .custom-size-explore{
         max-width: 5vw;
@@ -141,11 +143,14 @@
     }
     /* general div margin  */
     .custom-margin{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
     }
-    .bgHandcraft::before {
-        background-position: left top; 
+    /* Handcraft background  */
+    .responsive{
+        width: auto;
+        height: 70vw !important;
+        max-width: none !important;
     }
 }
 
@@ -158,7 +163,7 @@
         font-size: 28px; 
     }
     .textBody {
-        font-size: 15px; 
+        font-size: 2vw; 
     }
     .custom-size-explore{
         min-width: 15vw;
@@ -172,11 +177,14 @@
     }
     /* general div margin  */
     .custom-margin{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 6vw;
+    margin-bottom: 6vw;
     }
-    .bgHandcraft::before {
-        background-position: left top; 
+    /* Handcraft background  */
+    .responsive{
+        width: auto;
+        height: 60vw !important;
+        max-width: none !important;
     }
 }
 
@@ -189,7 +197,7 @@
         font-size: 32px;
     }
     .textBody {
-        font-size: 16px;
+        font-size: 1.5vw;
     }
     .custom-size-explore{
         min-width: 15vw;
@@ -203,8 +211,14 @@
     }
     /* general div margin  */
     .custom-margin{
-        margin-top: 60px;
-        margin-bottom: 60px;
+        margin-top: 6vw;
+        margin-bottom: 6vw;
+    }
+    /* Handcraft background  */
+    .responsive{
+        width: auto;
+        height: 45vw !important;
+        max-width: none !important;
     }
 }
 
@@ -218,7 +232,7 @@
         font-size: 34px; 
     }
     .textBody {
-        font-size: 16px;
+        font-size: 1.3vw;
     }
     .custom-size-explore{
         min-width: 14vw;
@@ -232,9 +246,15 @@
     }
     /* general div margin  */
     .custom-margin{
-    margin-top: 70px;
-    margin-bottom: 70px;
-    }   
+        margin-top: 6vw;
+        margin-bottom: 6vw;
+    } 
+    /* Handcraft background  */
+    .responsive{
+        width: auto;
+        height: 44vw !important;
+        max-width: none !important;
+    }  
 }
 
 
